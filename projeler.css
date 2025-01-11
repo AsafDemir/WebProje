@@ -1,0 +1,140 @@
+body {
+    background: #222;
+    color: #ddd;
+}
+
+#filtre-alani {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    background: #333;
+    border-right: 1px solid #444;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    overflow-y: auto;
+    z-index: 900;
+    color: #ddd;
+}
+
+.filtreler {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filtreler .filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.filtreler label {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filtreler select,
+.filtreler input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #444;
+    color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filtreler button {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+    background: #48f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#ilan-container {
+    margin-left: 280px;
+    padding: 20px;
+    margin-top: 80px;
+    background: #222;
+}
+
+.ilan-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ilan-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    color: #ddd;
+}
+
+.ilan-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.ilan-card h3 {
+    font-size: 20px;
+    color: #bbb;
+    margin: 10px 0 5px;
+}
+
+.ilan-card p {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .ilan-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ilan-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #filtre-alani {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        box-shadow: none;
+        top: 0;
+        background: #333;
+    }
+    #ilan-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ilan-container {
+        grid-template-columns: 1fr;
+    }
+}

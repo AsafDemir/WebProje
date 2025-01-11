@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler - Demiroğulları GYO</title>
+    <link rel="stylesheet" href="genel.css">
+    <link rel="stylesheet" href="projeler.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="anasayfa.html">Ana Sayfa</a></li>
+            <li><a href="projeler.html" class="active">İlanlar</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Filtreleme ve Sıralama Alanı -->
+    <section id="filtre-alani">
+        <div class="filtreler">
+            <div class="filter-group">
+                <label for="fiyat">Fiyat:</label>
+                <select id="fiyat">
+                    <option value="artan">Artan Fiyat</option>
+                    <option value="azalan">Azalan Fiyat</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="metrekare">Metrekare (m²):</label>
+                <select id="metrekare">
+                    <option value="artan">Küçükten Büyüğe</option>
+                    <option value="azalan">Büyükten Küçüğe</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="minFiyat">Min Fiyat:</label>
+                <input type="number" id="minFiyat" placeholder="Min Fiyat">
+            </div>
+
+            <div class="filter-group">
+                <label for="maxFiyat">Max Fiyat:</label>
+                <input type="number" id="maxFiyat" placeholder="Max Fiyat">
+            </div>
+
+            <div class="filter-group">
+                <label for="minMetrekare">Min m²:</label>
+                <input type="number" id="minMetrekare" placeholder="Min m²">
+            </div>
+
+            <div class="filter-group">
+                <label for="maxMetrekare">Max m²:</label>
+                <input type="number" id="maxMetrekare" placeholder="Max m²">
+            </div>
+
+            <button onclick="filtrele()">Filtrele</button>
+        </div>
+    </section>
+
+    <main>
+        <div id="ilan-container" class="ilan-container">
+            <!-- İlan kartları buraya gelecek -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Demiroğulları GYO. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="projeler.js"></script>
+</body>
+</html>
