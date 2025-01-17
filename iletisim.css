@@ -1,91 +1,73 @@
-/* İletişim Bilgileri Bölümü - Şirketin iletişim bilgilerinin yer aldığı alan */
+body {
+    background: #222222;
+    color: white;
+}
+
 #iletisim-bilgileri {
+    width: 800px;
+    margin: 60px auto;
     text-align: center;
-    padding: 60px 20px;
-    background: #222;
-    color: #ddd;
 }
 
-/* İletişim Bilgileri Başlığı - Bölüm başlığının stili */
 #iletisim-bilgileri h1 {
-    font-size: 36px;
-    color: #ddd;
-    margin-bottom: 20px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
 }
 
-/* İletişim Bilgileri Metni - Genel açıklama metni */
 #iletisim-bilgileri p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    color: #bbb;
+    color: #cccccc;
+    margin-bottom: 40px;
 }
 
-/* İletişim Bilgileri Listesi - Telefon, e-posta gibi bilgileri listeler */
 #iletisim-bilgileri ul {
     list-style: none;
     padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
 }
 
-/* İletişim Bilgileri Liste Elemanları */
-#iletisim-bilgileri ul li {
+#iletisim-bilgileri li {
+    color: #bbbbbb;
     margin: 10px 0;
-    color: #ccc;
 }
 
-/* İletişim Formu Bölümü - Kullanıcının mesaj bırakması için form alanı */
 #iletisim-formu {
-    background: #333;
-    color: #ddd;
-    padding: 60px 20px;
+    width: 800px;
+    margin: 60px auto;
     text-align: center;
+    background: #333333;
+    padding: 40px;
 }
 
-/* İletişim Formu Başlığı - Form başlığının stili */
 #iletisim-formu h2 {
-    font-size: 32px;
-    color: #ddd;
     margin-bottom: 30px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-/* İletişim Formu - Form alanının genel düzeni */
 #iletisim-formu form {
-    max-width: 600px;
-    margin: 0 auto;
     text-align: left;
 }
 
-/* Form Etiketleri - Form giriş alanı başlıkları */
 #iletisim-formu label {
     display: block;
     margin-bottom: 10px;
-    font-size: 18px;
-    color: #ccc;
+    color: #cccccc;
 }
 
-/* Form Giriş Alanları ve Metin Kutusu */
-#iletisim-formu input, #iletisim-formu textarea {
+#iletisim-formu input, 
+#iletisim-formu textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    background: #444444;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background: rgba(255,255,255,0.1);
-    color: #ddd;
+    color: white;
 }
 
-/* Gönder Butonu */
 #iletisim-formu button {
-    background: rgba(255,255,255,0.1);
-    color: #ddd;
-    border: 2px solid #ddd;
-    padding: 15px 30px;
-    font-size: 18px;
+    background: #48f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+}
+
+#iletisim-formu button:hover {
+    background: #37e;
 }

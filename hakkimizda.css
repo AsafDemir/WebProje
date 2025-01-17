@@ -1,111 +1,74 @@
 body {
-    font-family: Arial;
-    margin: 0;
-    padding: 0;
-    background: #222;
-    color: #ddd;
-}
-
-nav {
-    background: rgba(0,0,0,0.8);
-    color: #ddd;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background: #222222;
+    color: white;
 }
 
 #hakkimizda {
+    width: 800px;
+    margin: 60px auto;
     text-align: center;
-    padding: 60px 20px;
-    background: rgba(30,30,30,0.8);
-    color: #ddd;
 }
 
 #hakkimizda h1 {
-    font-size: 36px;
-    color: #ddd;
-    margin-bottom: 20px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
 }
 
 #hakkimizda p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #bbb;
     line-height: 1.6;
 }
 
 #misyon-vizyon {
-    background: rgba(42,42,42,0.8);
-    color: #ddd;
-    padding: 60px 20px;
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.misyon-vizyon-table {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.kutu {
+    background: #333333;
+    padding: 30px;
     text-align: center;
 }
 
-#misyon-vizyon .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+.kutu h2 {
+    margin-bottom: 20px;
+    color: #cccccc;
 }
 
-#misyon-vizyon .misyon, #misyon-vizyon .vizyon {
-    flex: 1 1 300px;
-    max-width: 45%;
-    padding: 20px;
-    background: rgba(51,51,51,0.6);
-    color: #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-#misyon-vizyon h2 {
-    font-size: 24px;
-    color: #bbb;
-    margin-bottom: 15px;
-}
-
-#misyon-vizyon p {
-    font-size: 16px;
-    color: #ccc;
-    line-height: 1.5;
+.kutu p {
+    color: #bbbbbb;
+    line-height: 1.6;
 }
 
 #ekibimiz {
+    width: 800px;
+    margin: 60px auto;
     text-align: center;
-    padding: 60px 20px;
-    background: rgba(28,28,28,0.8);
-    color: #ddd;
 }
 
 #ekibimiz h2 {
-    font-size: 32px;
-    color: #ddd;
     margin-bottom: 40px;
+    color: #cccccc;
+}
+
+.ekip-table {
+    width: 100%;
+    border-spacing: 20px;
 }
 
 .ekip-uyesi {
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(45,45,45,0.6);
-    color: #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    width: 80%;
-    max-width: 400px;
+    background: #333333;
+    padding: 30px;
 }
 
 .ekip-uyesi h3 {
-    font-size: 24px;
-    color: #bbb;
     margin-bottom: 10px;
+    color: #cccccc;
 }
 
 .ekip-uyesi p {
-    font-size: 18px;
-    color: #ccc;
+    color: #bbbbbb;
 }

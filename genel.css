@@ -1,101 +1,53 @@
-/* Genel Stil Ayarları - Sayfanın temel görünümünü ve düzenini belirler */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f3f4f6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: Arial;
+    background: #222222;
+    color: white;
 }
 
-/* Navigasyon Menüsü Stili - Sabit üst menü için genel stil */
 nav {
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    color: #fff;
-    padding: 15px 0;
+    background: #333333;
+    padding: 20px;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 1000;
 }
 
-/* Navigasyon menüsü hover efekti */
-nav:hover {
-    background-color: rgba(0, 0, 0, 0.85);
-}
-
-/* Navigasyon Menüsündeki Liste - Menü elemanlarının düzeni */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
-}
-
-/* Menü Elemanları - Her bir liste elemanının stili */
-nav ul li {
-    margin: 0 20px;
-    position: relative;
-}
-
-/* Menü Linkleri - Her bir bağlantı elemanının temel stili */
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 18px;
-    position: relative;
-}
-
-/* Hover Durumunda Link Stili */
-nav ul li a:hover {
-    color: #444444;
-}
-
-/* Aktif Bağlantı Stili - Mevcut sayfa bağlantısının görünümü */
-nav ul li a.active {
-    color: #444444;
-    border-bottom: 3px solid #444444;
-}
-
-/* Sayfa İçeriği Alanı - Navigasyon menüsünden sonra gelen içerik için alan bırakır */
-main {
-    flex: 1;
-    padding-top: 80px;
-}
-
-/* Footer - Sayfanın alt kısmında bulunan bilgi alanı stili */
-footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px;
-    width: 100%;
-    z-index: 900;
 }
 
-/* Duyarlı Tasarım (Responsive) - Daha küçük ekranlar için navigasyon menüsü düzeni */
-@media (max-width: 768px) {
-    /* Navigasyon menüsünün mobil görünüm düzeni */
-    nav ul {
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 10px 0;
-    }
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
 
-    /* Menü elemanları arasındaki boşluk artırıldı */
-    nav ul li {
-        margin: 10px 0;
-    }
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 10px;
+}
 
-    /* Mobil cihazlarda link boyutu büyütüldü */
-    nav ul li a {
-        font-size: 22px;
-    }
+nav a:hover {
+    color: white;
+}
+
+nav a.active {
+    color: white;
+}
+
+footer {
+    background: #111111;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+    color: #cccccc;
 }

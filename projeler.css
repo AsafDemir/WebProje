@@ -12,10 +12,6 @@ body {
     padding: 20px;
     background: #333;
     border-right: 1px solid #444;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-    overflow-y: auto;
-    z-index: 900;
-    color: #ddd;
 }
 
 .filtreler {
@@ -27,39 +23,33 @@ body {
 .filtreler .filter-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
 }
 
 .filtreler label {
-    font-size: 14px;
     color: #ccc;
-    font-weight: bold;
     margin-bottom: 5px;
 }
 
 .filtreler select,
 .filtreler input[type="number"] {
     padding: 8px;
-    font-size: 14px;
-    border-radius: 5px;
     border: 1px solid #555;
     background: #444;
     color: #ddd;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .filtreler button {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #fff;
     background: #48f;
+    color: white;
     border: none;
-    border-radius: 5px;
+    padding: 8px 15px;
     cursor: pointer;
-    margin-top: 10px;
-    width: 100%;
+}
+
+.filtreler button:hover {
+    background: #37e;
 }
 
 #ilan-container {
@@ -80,61 +70,21 @@ body {
 
 .ilan-card {
     background: #333;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: center;
-    color: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .ilan-card img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .ilan-card h3 {
-    font-size: 20px;
     color: #bbb;
     margin: 10px 0 5px;
 }
 
 .ilan-card p {
-    font-size: 16px;
     color: #aaa;
-    line-height: 1.5;
-}
-
-@media (max-width: 992px) {
-    .ilan-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .ilan-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #filtre-alani {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-right: none;
-        box-shadow: none;
-        top: 0;
-        background: #333;
-    }
-    #ilan-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .ilan-container {
-        grid-template-columns: 1fr;
-    }
 }
